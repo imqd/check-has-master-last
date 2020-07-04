@@ -1,0 +1,23 @@
+{
+  "name": "checkhasmasterlast",
+  "version": "0.0.0",
+  "description": "检测当前分支是否有master分支代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyangnianhua/check-has-master-last.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuyangnianhua/check-has-master-last/issues"
+  },
+  "homepage": "https://github.com/wuyangnianhua/check-has-master-last#readme",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "shelljs": "^0.8.4"
+  }
+}
