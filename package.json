@@ -19,7 +19,7 @@
     "url": "https://github.com/wuyangnianhua/check-has-master-last/issues"
   },
   "homepage": "https://github.com/wuyangnianhua/check-has-master-last#readme",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^4.1.0",
     "shelljs": "^0.8.4"
   }
