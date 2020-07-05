@@ -16,6 +16,7 @@
 npm i -D check-has-master-last husky
 ```
 
+package.json 添加如下内容。
 ```json
 {
   "husky": {
@@ -31,10 +32,14 @@ npm i -D check-has-master-last husky
 
 当 git push 时，提示下面错误。你跟我，赶紧打 tag。
 
-![](./img/img1.png)
+```bash
+$ 【小伙子，你很危险！】master 最新代码没有打 tag
+```
 
 当 git push 时，提示下面错误。你跟我，赶紧拉去 master 最新代码。
 
-![](./img/img2.png)
+```bash
+$ 【小伙子，你很危险！】你现在分支没有 master 最新代码
+```
 
 注意：这里 master 默认是生产代码分支，也默认在此分支打tag。
