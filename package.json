@@ -1,6 +1,6 @@
 {
   "name": "checkhasmasterlast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "检测当前分支是否有master分支代码",
   "main": "bin/index.js",
   "bin": {
