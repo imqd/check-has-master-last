@@ -16,7 +16,8 @@
 npm i -D checkhasmasterlast husky
 ```
 
-package.json 添加如下内容。
+package.json 添加如下内容。(注意: Node >= 10 和 Git >= 2.13.0 才可以使用下面写法)
+
 ```json
 {
   "husky": {
