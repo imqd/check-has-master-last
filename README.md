@@ -13,7 +13,7 @@
 要配合 githooks 一起使用，这里以 husky 为例
 
 ```bash
-npm i -D check-has-master-last husky
+npm i -D checkhasmasterlast husky
 ```
 
 package.json 添加如下内容。
