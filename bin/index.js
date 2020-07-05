@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const exec = require('./index')
+const exec = require('../index')
 
 exec()
