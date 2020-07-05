@@ -2,7 +2,10 @@
   "name": "checkhasmasterlast",
   "version": "0.0.0",
   "description": "检测当前分支是否有master分支代码",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "chml": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/wuyangnianhua/check-has-master-last.git"
   },
-  "author": "",
+  "author": "sisheb",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wuyangnianhua/check-has-master-last/issues"
