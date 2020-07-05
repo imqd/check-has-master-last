@@ -10,7 +10,7 @@ function getExecSh (cli, params) {
       },
       function (err, stdout, stderr) {
         if (err) {
-          console.log('执行 sh 出错咯，快来看看！')
+          console.log('执行 sh 出错咯，快来看看！', stdout, stderr)
         }
         resolve(stdout)
       }
@@ -31,8 +31,17 @@ async function exec () {
     console.log(chalk.red('\n【小伙子，你很危险！】master 最新代码没有打 tag\n'))
     process.exit()
   }
-  const currentBranchLastTag = await getExecSh('git describe --tags')
+  // const currentBranchLastTag = await getExecSh('git describe --tags')
   const originMasterLastTag = await getExecSh('git describe --tags origin/master')
+  let currentBranchLastTag = await getExecSh(`git describe --tags`)
+  // https://www.yiibai.com/git/git_describe.html
+  // git describe --tags
+  // tag1-2-g026498b
+  // 2:表示自打tag tag1 以来有2次提交(commit)
+  // g026498b：g 为git的缩写，在多种管理工具并存的环境中很有用处；
+  currentBranchLastTag = currentBranchLastTag.slice(0, originMasterLastTag.length - 1)
+  // console.log('currentBranchLastTag', currentBranchLastTag)
+  // console.log('originMasterLastTag', originMasterLastTag)
 
   if (currentBranchLastTag !== originMasterLastTag) {
     console.log(chalk.red('\n【小伙子，你很危险！】你现在分支没有 master 最新代码\n'))
