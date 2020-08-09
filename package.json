@@ -1,5 +1,5 @@
 {
-  "name": "checkhasmasterlast",
+  "name": "check-has-master-latest",
   "version": "1.0.8",
   "description": "检测当前分支是否有master分支代码",
   "main": "bin/index.js",
@@ -22,5 +22,13 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
